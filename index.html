@@ -53,7 +53,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="articles flex flex-col items-center text-center pt-12 pb-16 px-8 bg-stone-100">
+	<section id="articles" class="articles flex flex-col items-center text-center pt-12 pb-16 px-8 bg-stone-100">
 		<div class="articles-header flex flex-col items-center">
 			<h2 class="text-md sm:text-lg font-semibold sm:mt-10">LATEST ARTICLES</h2>
 			<div class="border-2 border-lime-950 w-10 mt-4"></div>
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about bg-white flex flex-col sm:flex-row">
+	<section id="about" class="about bg-white flex flex-col sm:flex-row">
 		<div class="about-img w-full sm:w-1/2 object-cover">
 			<img class="object-cover w-full" src="https://picsum.photos/600/500" alt="about-img ">
 		</div>
@@ -91,24 +91,54 @@
 				<h2 class="text-md sm:text-lg font-semibold sm:mt-10">ABOUT</h2>
 				<div class="border-2 border-lime-950 w-10 mt-4"></div>
 			</div>
-			<p class="about-content-paragraph w-full px-2 sm:px-0 sm:w-[65%] mt-8">
+			<p class="about-content-paragraph w-full px-2 py-10 sm:py-0 sm:px-0 sm:w-[65%] mt-8">
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem neque quasi incidunt amet deleniti.
 				Aliquam consequuntur ullam minima, iusto eum eveniet dolore nobis iste accusantium, odio laborum eius!
 				Ex, optio!
 			</p>
 		</div>
 	</section>
-	<section class="subscribe">
-		<div class="subscribe-content">
-			<div class="content-header"></div>
-			<div class="content-input"></div>
-			<div class="content-button"></div>
+	<section id="subscribe" class="subscribe bg-stone-100 flex justify-center text-center gap-4 w-full py-16">
+		<div class="subscribe-content w-full px-4 sm:w-3/6 sm:px-0 flex flex-col gap-4">
+			<div class="content-header">
+				<h2 class="text-2xl tracking-[3px]">SUBSCRIBE</h2>
+				<p>Sign-up to our newsletter</p>
+			</div>
+			<div class="flex flex-col items-center gap-4">
+				<input placeholder=" Your email" class="border-none p-4 text-[10px] w-full ouline-none" type="text"
+					name="email" id="email">
+				<button class="tracking-[3px] border border-black py-2 px-6 w-full sm:w-fit">SUBMIT</button>
+			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="logo">
+	<footer class="flex justify-between items-center p-10">
+		<div class="logo flex gap-4">
+			<div class="size-6 bg-lime-950 rounded-[50%] flex justify-center items-center">
+				<i class="text-white text-[10px] fa-brands fa-instagram"></i>
+			</div>
+			<div class="size-6 bg-lime-950 rounded-[50%] flex justify-center items-center">
+				<i class="text-white text-[10px] fa-brands fa-twitter"></i>
+			</div>
+			<div class="size-6 bg-lime-950 rounded-[50%] flex justify-center items-center">
+				<i class="text-white text-[10px] fa-brands fa-facebook-f"></i>
+			</div>
+			<div class="size-6 bg-lime-950 rounded-[50%] flex justify-center items-center">
+				<i class="text-white text-[10px] fa-brands fa-pinterest-p"></i>
+			</div>
 		</div>
-		<div class="link"></div>
+		<div class="link">
+			<ul class="flex justify-evenly items-center gap-4 text-[12px]">
+				<a href="#about">
+					<li>ABOUT</li>
+				</a>
+				<a href="#articles">
+					<li>ARTICLES</li>
+				</a>
+				<a href="#subscribe">
+					<li>SUBSCRIBE</li>
+				</a>
+			</ul>
+		</div>
 	</footer>
 </body>
 
